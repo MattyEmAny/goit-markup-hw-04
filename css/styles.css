@@ -38,11 +38,22 @@ header {
   height: 16px;
 }
 
+.link:visited {
+  color: currentColor;
+}
+
+.link:hover .icon,
+.link:active .icon,
+.link:focus .icon {
+  /* color: var(--links-color); */
+  fill: var(--links-color);
+}
+
 .link:hover,
 .link:active,
 .link:focus {
   color: var(--links-color);
-  fill: var(--links-color);
+  /* fill: var(--links-color); */
 }
 
 .button:hover,
