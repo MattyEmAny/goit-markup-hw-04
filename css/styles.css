@@ -353,8 +353,6 @@ section p {
 
 .icon {
   fill: #757575;
-  /* margin-top: 16px; */
-  /* margin-bottom: 32px; */
   margin-right: 10px;
 }
 
@@ -436,17 +434,41 @@ section p {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding: 0;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
-.client {
+.client-icon {
   width: 170px;
   height: 92px;
   border-radius: 4%;
   outline: 1px solid #afb1b8;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  padding-top: 12.5%;
+  fill: #afb1b8;
 }
 
 .position {
-  /* justify-items: center; */
+  /* margin-top: 12%; */
+}
+
+.our-clients > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon:hover,
+.client-icon:active,
+.client-icon:focus {
+  fill: var(--links-color);
+  outline: 1px solid var(--links-color);
+  /* stroke: var(--links-color); */
+  /* border-radius: 50%; */
+}
+
+.social-icon:hover .position,
+.social-icon:active .position,
+.social-icon:focus .position {
+  /* fill: var(--links-color); */
 }
