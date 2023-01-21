@@ -16,6 +16,7 @@ body {
   --dark-background: #2f303a;
   --team-background: #f5f4fa;
   --figcaption-background: #fff;
+  --foot-links: rgba(255, 255, 255, 0.6);
 }
 
 header {
@@ -282,6 +283,10 @@ p {
   max-width: 246px;
 }
 
+.foot-contacts {
+  color: var(--foot-links);
+}
+
 footer p {
   max-width: 240px;
 }
@@ -297,6 +302,7 @@ section p {
 
 .white {
   color: var(--footer-studio);
+  text-shadow: none;
 }
 
 .filtr-buttons {
@@ -430,13 +436,15 @@ section p {
   fill: #fff;
 }
 
+.clients {
+  margin-bottom: 94px;
+}
+
 .our-clients {
   display: flex;
   justify-content: center;
   list-style: none;
   padding: 0;
-  margin-right: 15px;
-  margin-left: 15px;
 }
 
 .client-icon {
@@ -446,12 +454,8 @@ section p {
   outline: 1px solid #afb1b8;
   display: flex;
   justify-content: center;
-  padding-top: 12.5%;
+  padding: 16px 32px;
   fill: #afb1b8;
-}
-
-.position {
-  /* margin-top: 12%; */
 }
 
 .our-clients > li:not(:last-child) {
@@ -463,12 +467,25 @@ section p {
 .client-icon:focus {
   fill: var(--links-color);
   outline: 1px solid var(--links-color);
-  /* stroke: var(--links-color); */
-  /* border-radius: 50%; */
 }
 
 .social-icon:hover .position,
 .social-icon:active .position,
 .social-icon:focus .position {
   /* fill: var(--links-color); */
+}
+
+.card-text {
+  text-decoration: none;
+}
+
+.card-box:hover,
+.card-box:active,
+.card-box:focus {
+  box-shadow: 0px 4px 4px 0px #00000040;
+  text-decoration: none;
+}
+
+.card-text:visited {
+  color: currentColor;
 }
